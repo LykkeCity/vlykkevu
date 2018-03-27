@@ -2608,7 +2608,7 @@ hr.full { margin-left: 0; margin-right: 0; width: 100%; }
 
 .world .list__icon { width: 40px; margin-right: 18px; margin-right: 1.125rem; }
 
-.world .list__text { position: relative; top: -2px; top: -0.125rem; }
+.world .list__text { position: relative; top: -2px; top: -0.125rem; max-width: 240px}
 
 .world .list--simple { list-style: disc inside; padding-left: 18px; padding-left: 1.125rem; }
 

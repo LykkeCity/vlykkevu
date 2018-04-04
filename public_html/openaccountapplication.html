@@ -65,51 +65,61 @@
   </header>
 
   <article class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-4">
+          <div class="intro_text">
+            <h1>Open Account Application Form</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="world section--padding">
       <p>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4efhc10LZOm2nX77zfVNDv7PahK5euUcLRwlsJLL_1xD8uA/viewform?embedded=true"
           width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </p>
     </section>
+  </article>
 
 
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="footer__copy">Copyright &copy; 2018 Lykke. All rights reserved.</div>
+        </div>
 
-    <div class="footer__bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="footer__copy">Copyright &copy; 2018 Lykke. All rights reserved.</div>
-          </div>
+        <hr>
 
-          <hr>
+        <p>
+          <b>Risk warning:</b> Forex and CFD Trading involves significant risk to your invested capital. Please read and ensure
+          that you fully understand our
+          <a href="Lykke_Cyprus_Ltd_Risk_Disclosure_20170131.pdf">Risk Disclosure</a>.
 
           <p>
-            <b>Risk warning:</b> Forex and CFD Trading involves significant risk to your invested capital. Please read and ensure
-            that you fully understand our
-            <a href="Lykke_Cyprus_Ltd_Risk_Disclosure_20170131.pdf">Risk Disclosure</a>.
+            <b>Restricted regions:</b> Lykke Cyprus Ltd does not provide services for citizens of certain regions, including
+            the United States of America.
 
-            <p>
-              <b>Restricted regions:</b> Lykke Cyprus Ltd does not provide services for citizens of certain regions, including
-              the United States of America.
-
-        </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 
-    <script>
-      $('.smooth_scroll').click(function () {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html, body').animate({
-            scrollTop: target.offset().top - 100
-          }, 1000);
-          return false;
-        }
-      });
-    </script>
+  <script>
+    $('.smooth_scroll').click(function () {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+        return false;
+      }
+    });
+  </script>
 
 </body>
 

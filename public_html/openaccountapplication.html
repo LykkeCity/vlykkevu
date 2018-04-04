@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lykke Cyprus Ltd</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-68151354-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page_new page_world">
+
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-4">
+          <a href="/" class="logo header__logo">
+            <img src="img/lykke_new.svg" height="43" alt="" />
+          </a>
+        </div>
+        <div class="col-xs-10 col-sm-8">
+          <ul class="nav nav--header">
+            <li>
+              <a class="smooth_scroll" href="index.html#info">Information disclosure</a>
+            </li>
+            <li>
+              <a class="smooth_scroll" href="/#contacts">Contacts</a>
+            </li>
+            <li>
+              <a class="smooth_scroll" href="/openaccountapplication.html">Open Account Application Form</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="content">
+    <section class="world section--padding">
+      <p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4efhc10LZOm2nX77zfVNDv7PahK5euUcLRwlsJLL_1xD8uA/viewform?embedded=true"
+          width="100%" height="2460" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </p>
+    </section>
+
+
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="footer__copy">Copyright &copy; 2018 Lykke. All rights reserved.</div>
+          </div>
+
+          <hr>
+
+          <p>
+            <b>Risk warning:</b> Forex and CFD Trading involves significant risk to your invested capital. Please read and ensure
+            that you fully understand our
+            <a href="Lykke_Cyprus_Ltd_Risk_Disclosure_20170131.pdf">Risk Disclosure</a>.
+
+            <p>
+              <b>Restricted regions:</b> Lykke Cyprus Ltd does not provide services for citizens of certain regions, including
+              the United States of America.
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+      $('.smooth_scroll').click(function () {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 1000);
+          return false;
+        }
+      });
+    </script>
+
+</body>
+
+</html>

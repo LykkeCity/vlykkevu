@@ -40,7 +40,21 @@
 <body class="page_new page_world">
 
   <header class="header">
+    <div>
+      <div class="header_banner" id="bannerCookie">
+        <div class="header_banner__text">
+          This website uses cookies and similar technologies to help us provide you with a better service. They allow us to remember
+          you and understand how you use this site. If you accept our use of cookies you can continue browsing. Please see
+          our
+          <a rel="external" href="documents/Lykke_Cookies_Policy.pdf">Cookie Policy</a> for full details and how you can opt-out.
+        </div>
+        <a class="header_banner__acceptbutton" id="bannerCookieClose">
+          Accept
+        </a>
+      </div>
+    </div>
     <div class="container">
+
       <div class="row">
         <div class="col-xs-2 col-sm-4">
           <a href="/" class="logo header__logo">
@@ -257,6 +271,14 @@
                   <a href="documents/Lykke_Cyprus_Risk_Disclosure_Statement.pdf">Risk Disclosure Statement</a>
                 </span>
               </li>
+              <li class="list__item">
+                <span class="list__icon">
+                  <img src="img/vanuatu/order-policy-icn.svg" width="34" alt="">
+                </span>
+                <span class="list__text">
+                  <a href="documents/Lykke_Cookies_Policy.pdf">Cookies Policy</a>
+                </span>
+              </li>
             </ul>
           </div>
         </div>
@@ -314,8 +336,9 @@
   </div>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/cookie_banner.js"></script>
 
-  <script>
+  <script type="text/javascript">
     $('.smooth_scroll').click(function () {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -326,6 +349,19 @@
         return false;
       }
     });
+
+
+    /* <![CDATA[ */
+    function externalLinks() {
+      links = document.getElementsByTagName("a");
+      for (i = 0; i < links.length; i++) {
+        link = links[i];
+        if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+          link.target = "_blank";
+      }
+    }
+    window.onload = externalLinks;
+  /* ]]> */
   </script>
 
 </body>
